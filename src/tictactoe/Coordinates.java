@@ -15,6 +15,14 @@ public class Coordinates {
             int y = sc.nextInt();
             if (x < 1 || x > 3 || y < 1 || y > 3) {
                 System.out.println("Coordinates should be from 1 to 3!");
+            } else if (arr[3 - y][x - 1] == ' ' && noOfO == noOfX) {
+                arr[3 - y][x - 1] = 'X';
+                noOfX++;
+                inputIsCorrect = true;
+            } else if (arr[3 - y][x - 1] == ' ' && noOfX > noOfO) {
+                arr[3 - y][x - 1] = 'O';
+                noOfO++;
+                inputIsCorrect = true;
             }
         }
     }
