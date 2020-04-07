@@ -23,6 +23,8 @@ public class Coordinates {
                 arr[3 - y][x - 1] = 'O';
                 noOfO++;
                 inputIsCorrect = true;
+            } else {
+                System.out.println("This cell is occupied! Choose another one!");
             }
         }
     }
