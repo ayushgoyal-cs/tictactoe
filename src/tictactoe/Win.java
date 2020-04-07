@@ -1,5 +1,5 @@
 package tictactoe;
 
-public class Main {
+public class Win {
 
 }
