@@ -11,6 +11,14 @@ public class Win {
                                 } else if (arr[i][0] == 'O') {
                                         oWins++;
                                 }
+
+                        }
+                        if (arr[0][i] == arr[1][i] && arr[0][i] == arr[2][i]) {
+                                if (arr[0][i] == 'X') {
+                                        xWins++;
+                                } else if (arr[0][i] == 'O') {
+                                        oWins++;
+                                }
                         }
                 }
         }
