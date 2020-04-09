@@ -4,6 +4,10 @@ public class Win {
         void win(char[][] arr) {
                 int xWins = 0;
                 int oWins = 0;
+                int noOfO = 0;
+                int noOfX = 0;
+                int gameOver = 0;
+                int totalXO = 0;
                 for (int i = 0; i < 3; i++) {
                         if (arr[i][0] == arr[i][1] && arr[i][0] == arr[i][2]) {
                                 if (arr[i][0] == 'X') {
@@ -28,6 +32,17 @@ public class Win {
                         } else if (arr[1][1] == 'O') {
                                 oWins++;
                         }
+                }
+                totalXO = noOfO + noOfX;
+                if (xWins == 0 && oWins == 0 && totalXO == 9) {
+                        System.out.println("Draw");
+                        gameOver = 1;
+                } else if (xWins == 1) {
+                        System.out.println("X wins");
+                        gameOver = 1;
+                } else if (oWins == 1) {
+                        System.out.println("O wins");
+                        gameOver = 1;
                 }
 
         }
