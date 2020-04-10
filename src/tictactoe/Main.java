@@ -8,6 +8,8 @@ public class Main {
                 arr[i][j] = ' ';
             }
         }
+        Print print = new Print();
+
     }
 
 }
