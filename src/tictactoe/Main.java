@@ -9,6 +9,9 @@ public class Main {
             }
         }
         Print.print(arr);
+        while (Win.gameOver == 0) {
+
+        }
     }
 
 }
