@@ -10,7 +10,7 @@ public class Main {
         }
         Print.print(arr);
         while (Win.gameOver == 0) {
-
+            Coordinates.inputCoordinates(arr);
         }
     }
 
