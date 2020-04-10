@@ -12,6 +12,7 @@ public class Main {
         while (Win.gameOver == 0) {
             Coordinates.inputCoordinates(arr);
             Print.print(arr);
+            Win.win(arr);
         }
     }
 
