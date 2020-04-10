@@ -1,7 +1,7 @@
 package tictactoe;
 
 public class Print {
-        void print(char[][] arr) {
+        public static void print(char[][] arr) {
                 System.out.println("---------");
                 for (char[] x : arr) {
                         System.out.print("| ");

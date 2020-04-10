@@ -3,11 +3,12 @@ package tictactoe;
 import java.util.Scanner;
 
 public class Coordinates {
+    static int noOfO = 0;
+    static int noOfX = 0;
 
-    void inputCoordinates(char[][] arr) {
+    public static void inputCoordinates(char[][] arr) {
         Scanner sc = new Scanner(System.in);
-        int noOfO = 0;
-        int noOfX = 0;
+
         boolean inputIsCorrect = false;
         while (!inputIsCorrect) {
             System.out.println("Enter the coordinates: ");

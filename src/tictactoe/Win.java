@@ -1,13 +1,15 @@
 package tictactoe;
 
 public class Win {
-        void win(char[][] arr) {
+        static int gameOver = 0;
+        static int totalXO = 0;
+
+        public static void win(char[][] arr) {
                 int xWins = 0;
                 int oWins = 0;
                 int noOfO = 0;
                 int noOfX = 0;
-                int gameOver = 0;
-                int totalXO = 0;
+
                 for (int i = 0; i < 3; i++) {
                         if (arr[i][0] == arr[i][1] && arr[i][0] == arr[i][2]) {
                                 if (arr[i][0] == 'X') {
