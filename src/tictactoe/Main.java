@@ -15,5 +15,4 @@ public class Main {
             Win.win(arr);
         }
     }
-
 }
